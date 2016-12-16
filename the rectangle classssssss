@@ -1,0 +1,28 @@
+public class Rectangle {
+
+	double length;
+	double width;
+	private static Rectangle rectangle1;
+	private static Rectangle rectangle;
+	
+	public Rectangle(double theLength, double theWidth){
+		length = theLength; 
+		width = theWidth; 
+	}
+	public double CalculateArea(){
+	return  length*width;
+	
+		
+	}
+	public double calculatePerimeter(){
+		
+		return 2*(length + width);
+	}
+	public static void  main (String [] arg){
+		rectangle = new Rectangle(2.0,5.2);
+		rectangle1 = new Rectangle (4.2,3.8);
+		System.out.println(" the area = " + rectangle.CalculateArea());
+		System.out.println(" the perimeter = " + rectangle1.calculatePerimeter());
+		
+	}
+}
